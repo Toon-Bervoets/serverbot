@@ -1,6 +1,7 @@
 const discord = require("discord.js");
 const ms = require("ms");
 
+
 module.exports.run = async (client, message, args) => {
 
     // !tempmute persoon tijd (h,m,s).

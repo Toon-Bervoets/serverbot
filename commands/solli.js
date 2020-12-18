@@ -55,7 +55,7 @@ module.exports.run = async (bot, message, args) => {
                                 VIEW_CHANNEL: false
                             });
             
-                            settedParent.updateOverwrite(message.author.id, {
+                            settedParent.updateOverwrite(user.id, {
                                 CREATE_INVITE: false,
                                 VIEW_CHANNEL: true,
                                 READ_MESSAGES: true,

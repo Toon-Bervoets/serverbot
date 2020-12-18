@@ -116,35 +116,35 @@ module.exports.run = async (bot, message, args) => {
                             settedParent.send(`<@${user.id}>`, embedParent);    
                             settedParent.send(vraag1);
 
-                            settedParent.awaitMessages(s => s.author.id == message.author.id,{max:1}).then(antwoord=> {
+                            settedParent.awaitMessages(s => s.user.id == message.author.id,{max:1}).then(antwoord=> {
                                 var antwoord1 = antwoord.first();
                                 settedParent.send(vraag2);
 
-                                settedParent.awaitMessages(s => s.author.id == message.author.id,{max:1}).then(antwoord=> {
+                                settedParent.awaitMessages(s => s.user.id == message.author.id,{max:1}).then(antwoord=> {
                                     var antwoord2 = antwoord.first();
                                     settedParent.send(vraag3);
 
-                                    settedParent.awaitMessages(s => s.author.id == message.author.id,{max:1}).then(antwoord=> {
+                                    settedParent.awaitMessages(s => s.user.id == message.author.id,{max:1}).then(antwoord=> {
                                         var antwoord3 = antwoord.first();
                                         settedParent.send(vraag4);
 
-                                        settedParent.awaitMessages(s => s.author.id == message.author.id,{max:1}).then(antwoord=> {
+                                        settedParent.awaitMessages(s => s.user.id == message.author.id,{max:1}).then(antwoord=> {
                                             var antwoord4 = antwoord.first();
                                             settedParent.send(vraag5);
 
-                                            settedParent.awaitMessages(s => s.author.id == message.author.id,{max:1}).then(antwoord=> {
+                                            settedParent.awaitMessages(s => s.user.id == message.author.id,{max:1}).then(antwoord=> {
                                                 var antwoord5 = antwoord.first();
                                                 settedParent.send(vraag6);
 
-                                                settedParent.awaitMessages(s => s.author.id == message.author.id,{max:1}).then(antwoord=> {
+                                                settedParent.awaitMessages(s => s.user.id == message.author.id,{max:1}).then(antwoord=> {
                                                     var antwoord6 = antwoord.first();
                                                     settedParent.send(vraag7);
 
-                                                    settedParent.awaitMessages(s => s.author.id == message.author.id,{max:1}).then(antwoord=> {
+                                                    settedParent.awaitMessages(s => s.user.id == message.author.id,{max:1}).then(antwoord=> {
                                                         var antwoord7 = antwoord.first();
                                                         settedParent.send(vraag8);
 
-                                                        settedParent.awaitMessages(s => s.author.id == message.author.id,{max:1}).then(antwoord=> {
+                                                        settedParent.awaitMessages(s => s.user.id == message.author.id,{max:1}).then(antwoord=> {
                                                             var antwoord8 = antwoord.first();
 
                                                             var Solli = new discord.MessageEmbed()
